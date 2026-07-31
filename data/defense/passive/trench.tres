@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="PassiveDefenseData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/passive_defense_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "trench"
+display_name = "Graben"
+category = 0
+subcategory = 2
+description = "Terrainähnliches Verteidigungselement. Kleine Gegner können ihn nicht überqueren, schwere Gegner können ihn möglicherweise überwinden. Fliegende Gegner ignorieren ihn. Kann nicht direkt angegriffen werden."
+build_cost = {"stone": 8}
+build_time = 5.0
+footprint_size = Vector2i(1, 1)
+max_health = 0
+armor = 0.0
+resistances = {}
+power_idle_draw = 0.0
+power_active_draw = 0.0
+maintenance_cost = 0.0
+required_ammo_type = ""
+required_research_tier = 1
+repairable = false
+allowed_terrain_types = Array[String](["grass", "rock"])
+destructible = false
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/passive/generic_obstacle/generic_obstacle.tscn"
+passability_rules = Array[Dictionary]([{"profile": "ground_small", "solid": true, "weight_scale": 1.0}, {"profile": "ground_large", "solid": false, "weight_scale": 2.0}])
+blocks_own_units = false
+durability_loss_per_cross = 0.0
+has_facing = false
+frontal_resistance_multiplier = 1.0

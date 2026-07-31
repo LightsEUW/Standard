@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ciws"
+display_name = "Nahbereichsabwehrsystem"
+category = 1
+subcategory = 12
+description = "Schützt Gebäude vor Projektilen. Greift keine normalen Gegner an, sondern erkennt und zerstört Raketen, Granaten oder andere feindliche Projektile. Sehr kurze Reaktionszeit, hohe Feuerrate, begrenzte Reichweite, begrenzte Abfangwahrscheinlichkeit."
+build_cost = {"iron": 35, "copper": 20}
+build_time = 6.0
+footprint_size = Vector2i(2, 2)
+max_health = 70
+armor = 1.5
+resistances = {}
+power_idle_draw = 1.5
+power_active_draw = 5.0
+maintenance_cost = 1.0
+required_ammo_type = "ciws_rounds"
+required_research_tier = 2
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_weapon/generic_weapon.tscn"
+range = 100.0
+min_range = 0.0
+turret_rotation_speed = 400.0
+target_acquisition_time = 0.05
+fire_rate = 10.0
+projectile_speed = 1500.0
+damage = 3.0
+damage_type = 0
+splash_radius = 0.0
+armor_penetration = 0.0
+ammo_capacity = 200
+reload_time = 5.0
+idle_power_draw_override = -1.0
+firing_power_draw = 5.0
+heat_per_shot = 0.0
+max_heat = 0.0
+cooldown_rate = 0.0
+valid_target_types = Array[String](["projectile"])
+default_target_priority = 0
+requires_line_of_sight = true
+requires_sensor_link = false
+can_damage_own_buildings = false
+is_indirect_fire = false

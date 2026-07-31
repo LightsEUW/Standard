@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="PassiveDefenseData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/passive_defense_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "automatic_gate"
+display_name = "Automatisches Tor"
+category = 0
+subcategory = 1
+description = "Ermöglicht kontrollierte Durchgänge durch Verteidigungslinien. Öffnet für eigene Einheiten, schließt automatisch bei Feindalarm. Braucht Strom zum aktiven Öffnen/Schließen, bleibt aber auch ohne Strom sicher geschlossen."
+build_cost = {"iron": 15, "stone": 10}
+build_time = 3.0
+footprint_size = Vector2i(1, 2)
+max_health = 60
+armor = 1.5
+resistances = {0: 0.2}
+power_idle_draw = 0.5
+power_active_draw = 2.0
+maintenance_cost = 0.0
+required_ammo_type = ""
+required_research_tier = 0
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/passive/automatic_gate/automatic_gate.tscn"
+passability_rules = Array[Dictionary]([{"profile": "ground_small", "solid": true, "weight_scale": 1.0}, {"profile": "ground_large", "solid": true, "weight_scale": 1.0}])
+blocks_own_units = true
+durability_loss_per_cross = 0.0
+has_facing = false
+frontal_resistance_multiplier = 1.0

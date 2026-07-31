@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "chemical_thrower"
+display_name = "Chemiewerfer"
+category = 1
+subcategory = 10
+description = "Unterstützungsgeschütz. Verursacht geringen direkten Schaden, aber Schaden über Zeit und kann Panzerung oder Resistenzen reduzieren. Verstärkt die Wirkung anderer Geschütze."
+build_cost = {"iron": 20, "sulfur": 15}
+build_time = 5.0
+footprint_size = Vector2i(2, 2)
+max_health = 55
+armor = 1.0
+resistances = {}
+power_idle_draw = 1.0
+power_active_draw = 2.5
+maintenance_cost = 1.0
+required_ammo_type = "chemical_rounds"
+required_research_tier = 2
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_weapon/generic_weapon.tscn"
+range = 220.0
+min_range = 0.0
+turret_rotation_speed = 150.0
+target_acquisition_time = 0.3
+fire_rate = 1.5
+projectile_speed = 350.0
+damage = 4.0
+damage_type = 5
+splash_radius = 30.0
+armor_penetration = 0.0
+ammo_capacity = 40
+reload_time = 4.0
+idle_power_draw_override = -1.0
+firing_power_draw = 2.5
+heat_per_shot = 0.0
+max_heat = 0.0
+cooldown_rate = 0.0
+valid_target_types = Array[String](["ground"])
+default_target_priority = 0
+requires_line_of_sight = true
+requires_sensor_link = false
+can_damage_own_buildings = false
+is_indirect_fire = false
