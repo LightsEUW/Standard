@@ -54,8 +54,7 @@ Progression der Gegner-Taktiken (gestufte Eskalation, kein echtes Machine-Learni
 2. **Mittel**: Gruppentaktik, Aufteilen, Flankieren.
 3. **Fortgeschritten**: Einsatz von Fernwaffen.
 4. **Spät**: Gezielte Angriffe auf Infrastruktur (Minenbohrer, Energieerzeuger, Stromleitungen) statt blindem Rushen auf den Nexus.
-
-Offene Frage: Gelten Terrain-Barrieren (s. Abschnitt 6) für alle Gegnertypen, oder wird es später fliegende/grabende Gegner geben, die diese umgehen?
+5. **Endgame**: Gegner entwickeln selbst Technologie als Antwort auf Spielerverhalten — z. B. Ballons, um Klippen und Wälle zu überfliegen. Terrain-Barrieren sind dadurch nur früh/mittel im Spiel zuverlässig; im Endgame wird Flugabwehr notwendig, unabhängig davon, wie gut das Terrain sonst abschirmt.
 
 ## 5. Ressourcen
 
@@ -87,9 +86,19 @@ Wächst über den Spielverlauf:
 2. **Mittel/Spät** (schrittweise per Forschung freigeschaltet): Solar, Windkraft, Wasserkraft, Geothermal.
 3. **Endgame**: Kernreaktoren (Uranerz als Brennstoff).
 
-### Offene Fragen
-- Verhalten bei Energie-Engpass (Brownout): Betrifft es alles gleichermaßen, gibt es ein Prioritäts-/Lastabwurf-System (Verteidigung vor Fabrik), oder gibt es getrennte Netze für Verteidigung und Fabrik?
-- Ist der Energiebedarf des Nexus vom Spieler drosselbar (Risiko/Fortschritt-Hebel), oder ein reines Einbahnstraßen-Hochfahren?
+### Verhalten bei Energie-Engpass (Brownout)
+
+Feste Prioritätsreihenfolge, kein Spielereingriff nötig:
+
+1. **Nexus** hat immer oberste Priorität — er darf nie ausfallen.
+2. **Verteidigung** hat Vorrang vor allen anderen Gebäudekategorien.
+3. Reicht die Energie trotzdem nicht, werden die **am weitesten vom Nexus entfernten Gebäude** nach und nach abgeschaltet, um Nexus und Verteidigung am Leben zu halten.
+
+Das erzeugt einen strategischen Nebeneffekt: Weit expandierte Außenposten (Abbaustationen etc.) sind bei Energieknappheit zuerst gefährdet — Expansion ist dadurch nicht nur räumlich/verteidigungstechnisch, sondern auch energetisch riskant.
+
+### Nexus-Energiebedarf: nicht drosselbar
+
+Der Energiebedarf des Nexus ist **fest, nicht vom Spieler regulierbar**. Der Nexus muss durchgehend laufen — es gibt keinen "Sicherheitsmodus", der die Bedrohung künstlich reduziert. Das steigende Energiebedarf-Niveau ist eine feste Herausforderung, der sich der Spieler stellen muss, kein Hebel, mit dem man das Tempo drosseln kann.
 
 ## 7. Karte & Bauraster
 
@@ -100,9 +109,9 @@ Wächst über den Spielverlauf:
   - Nexus: 3×3 Kacheln
 - **Natürliches Terrain**: Flüsse, Seen, Klippen — unpassierbar, bilden natürliche Grenzen/Nadelöhre, ähnlich wie Wasser. Reduziert den Bedarf an vollständigen Verteidigungsringen, da "sichere" Flanken durch Terrain entstehen.
 
-### Offene Fragen
-- Kartengröße: fest begrenzt oder sehr groß/quasi unbegrenzt?
-- Ressourcen-Erschöpfung: Erschöpfen sich Vorkommen (erzwingt Expansion und damit einen wachsenden Verteidigungsperimeter), oder sind sie quasi unerschöpflich?
+### Kartengröße & Ressourcen-Erschöpfung
+
+Die Karte ist **sehr groß, quasi unbegrenzt** (ähnlich Factorios praktisch endloser Welt). Die meisten Rohstoffvorkommen sind **endlich** und erschöpfen sich mit der Zeit — nur wenige Ausnahmen (z. B. Wasser) sind unerschöpflich. Expansion ist dadurch zwingend notwendig, ähnlich wie in Factorio, und erhöht — wie oben beschrieben — sowohl das Bedrohungs- als auch das Energieversorgungsrisiko für die neu erschlossenen Außenbereiche.
 
 ## 8. Gebäudekategorien
 
@@ -130,10 +139,6 @@ Verteidigungsgebäude sind selbst Verbraucher im Logistiknetz: Geschütze brauch
 
 ## 11. Offene Punkte (noch zu klären)
 
-- Verhalten bei Energie-Engpass (Priorisierung Verteidigung vs. Fabrik).
-- Drosselbarkeit des Nexus-Energiebedarfs durch den Spieler.
-- Gelten Terrain-Barrieren für alle Gegnertypen, oder gibt es künftig fliegende/grabende Gegner?
-- Ressourcen-Erschöpfung und Kartengröße.
 - Konkrete Gebäudeliste innerhalb der Kategorie Verteidigung (Wandtypen, Geschütztypen/Munitionsarten, Sensorik, Reparatur, evtl. Schilde).
 - Konkreter Logistik-Mechanismus (Förderbänder vs. Rohre vs. Drohnen vs. direkte Verbindungen).
 - Browser vs. Standalone-Anwendung (Technik-Stack noch nicht entschieden).
