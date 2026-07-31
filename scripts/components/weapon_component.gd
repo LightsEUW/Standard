@@ -109,7 +109,11 @@ func _try_fire(target: Node) -> void:
 func _spawn_projectile(target: Node) -> void:
 	var projectile := GenericProjectileScene.instantiate()
 	get_tree().current_scene.add_child(projectile)
-	var origin: Vector2 = _turret_pivot.global_position if _turret_pivot != null else global_position
+	# WeaponComponent extends Node (no global_position of its own) - it is
+	# always a child of the WeaponBuilding (a Node2D), and _turret_pivot is
+	# always set by WeaponBuilding (falls back to the building itself if no
+	# dedicated TurretPivot node exists), so this is never actually null.
+	var origin: Vector2 = _turret_pivot.global_position
 	projectile.setup(origin, target, _data)
 
 
