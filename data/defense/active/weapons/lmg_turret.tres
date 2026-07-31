@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lmg_turret"
+display_name = "Leichtes Maschinengewehr"
+category = 1
+subcategory = 6
+description = "Frühes Standardgeschütz. Hohe Feuerrate, geringer Einzelschaden, effektiv gegen kleine ungepanzerte Gegner. Benötigt einfache Patronen und Sichtlinie."
+build_cost = {"iron": 20}
+build_time = 3.0
+footprint_size = Vector2i(2, 2)
+max_health = 60
+armor = 1.0
+resistances = {}
+power_idle_draw = 1.0
+power_active_draw = 3.0
+maintenance_cost = 0.5
+required_ammo_type = "light_rounds"
+required_research_tier = 0
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_weapon/generic_weapon.tscn"
+range = 220.0
+min_range = 0.0
+turret_rotation_speed = 260.0
+target_acquisition_time = 0.1
+fire_rate = 6.0
+projectile_speed = 700.0
+damage = 4.0
+damage_type = 0
+splash_radius = 0.0
+armor_penetration = 0.5
+ammo_capacity = 60
+reload_time = 2.5
+idle_power_draw_override = -1.0
+firing_power_draw = 1.5
+heat_per_shot = 0.0
+max_heat = 0.0
+cooldown_rate = 0.0
+valid_target_types = Array[String](["ground"])
+default_target_priority = 0
+requires_line_of_sight = true
+requires_sensor_link = false
+can_damage_own_buildings = false
+is_indirect_fire = false

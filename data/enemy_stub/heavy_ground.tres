@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStubData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy_stub/enemy_stub_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "test_heavy_ground"
+display_name = "Test-Gegner (schwer)"
+size_class = "heavy"
+movement_profile = "ground_large"
+max_health = 90
+armor = 4.0
+speed = 35.0
+is_flying = false

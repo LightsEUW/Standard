@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStubData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy_stub/enemy_stub_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "test_small_ground"
+display_name = "Test-Gegner (klein)"
+size_class = "small"
+movement_profile = "ground_small"
+max_health = 15
+armor = 0.0
+speed = 70.0
+is_flying = false

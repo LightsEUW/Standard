@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SensorData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/sensor_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "motion_sensor"
+display_name = "Bewegungssensor"
+category = 1
+subcategory = 13
+description = "Kurze bis mittlere Reichweite, erkennt Bodengegner ohne direkte Sichtlinie. Kann versteckte oder getarnte Gegner entdecken, liefert nur grobe Positionsinformationen."
+build_cost = {"copper": 10, "iron": 5}
+build_time = 2.0
+footprint_size = Vector2i(1, 1)
+max_health = 20
+armor = 0.0
+resistances = {}
+power_idle_draw = 0.5
+power_active_draw = 1.0
+maintenance_cost = 0.0
+required_ammo_type = ""
+required_research_tier = 0
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_sensor/generic_sensor.tscn"
+sensor_range = 180.0
+requires_line_of_sight = false
+detects_flying = false
+detects_hidden = true
+feeds_targeting_network = true

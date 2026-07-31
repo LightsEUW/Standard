@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Standard"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="res://demo/defense_test_scene.tscn"
+
+[autoload]
+
+BuildingRegistry="*res://autoload/building_registry.gd"
+NavigationManager="*res://autoload/navigation_manager.gd"
+PowerGridService="*res://autoload/power_grid_service.gd"
+SupplyService="*res://autoload/supply_service.gd"
+SensorNetwork="*res://autoload/sensor_network.gd"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

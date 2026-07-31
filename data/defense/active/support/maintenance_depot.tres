@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SupportData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/support_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "maintenance_depot"
+display_name = "Wartungsdepot"
+category = 1
+subcategory = 14
+description = "Unterstützt Geschütze in einem begrenzten Radius: reduziert Überhitzung und Ladehemmungen, erhöht Nachlade- oder Reparaturgeschwindigkeit. Benötigt Strom, Schmierstoffe und Ersatzteile, gibt keinen direkten Schadensbonus. Datenreferenz nur - Wartungsbonus-Mechanik noch nicht implementiert, daher ohne Szene."
+build_cost = {"iron": 35, "copper": 15}
+build_time = 6.0
+footprint_size = Vector2i(2, 2)
+max_health = 60
+armor = 1.0
+resistances = {}
+power_idle_draw = 1.0
+power_active_draw = 3.0
+maintenance_cost = 1.0
+required_ammo_type = ""
+required_research_tier = 2
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = ""
+repair_radius = 200.0
+repair_amount_per_tick = 0.0
+repair_material_cost_per_tick = 0.0
+max_simultaneous_targets = 4
+default_repair_priority = 6

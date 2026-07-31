@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rocket_launcher"
+display_name = "Raketenwerfer"
+category = 1
+subcategory = 8
+description = "Schwere aktive Verteidigung. Hohe Reichweite, hoher Einzel- oder Flächenschaden, geringe Feuerrate, teure Munition. Kann abhängig von der Munition Boden- oder Flugziele angreifen."
+build_cost = {"iron": 45, "copper": 15}
+build_time = 7.0
+footprint_size = Vector2i(3, 3)
+max_health = 100
+armor = 2.0
+resistances = {}
+power_idle_draw = 1.5
+power_active_draw = 6.0
+maintenance_cost = 1.5
+required_ammo_type = "rockets"
+required_research_tier = 2
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_weapon/generic_weapon.tscn"
+range = 450.0
+min_range = 0.0
+turret_rotation_speed = 120.0
+target_acquisition_time = 0.6
+fire_rate = 0.5
+projectile_speed = 500.0
+damage = 70.0
+damage_type = 1
+splash_radius = 60.0
+armor_penetration = 6.0
+ammo_capacity = 8
+reload_time = 5.0
+idle_power_draw_override = -1.0
+firing_power_draw = 4.0
+heat_per_shot = 0.0
+max_heat = 0.0
+cooldown_rate = 0.0
+valid_target_types = Array[String](["ground", "flying"])
+default_target_priority = 0
+requires_line_of_sight = true
+requires_sensor_link = false
+can_damage_own_buildings = false
+is_indirect_fire = false

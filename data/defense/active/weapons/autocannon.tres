@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "autocannon"
+display_name = "Autokanone"
+category = 1
+subcategory = 6
+description = "Mittelschweres Mehrzweckgeschütz mit explosiver Munition und Flächenschaden. Mittlere Feuerrate, starke Wärmeentwicklung, kann bei Dauerfeuer überhitzen."
+build_cost = {"iron": 35, "copper": 10}
+build_time = 5.0
+footprint_size = Vector2i(2, 2)
+max_health = 90
+armor = 2.0
+resistances = {0: 0.1}
+power_idle_draw = 1.5
+power_active_draw = 5.0
+maintenance_cost = 1.0
+required_ammo_type = "autocannon_shells"
+required_research_tier = 1
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_weapon/generic_weapon.tscn"
+range = 320.0
+min_range = 0.0
+turret_rotation_speed = 200.0
+target_acquisition_time = 0.3
+fire_rate = 2.5
+projectile_speed = 800.0
+damage = 18.0
+damage_type = 1
+splash_radius = 40.0
+armor_penetration = 3.0
+ammo_capacity = 40
+reload_time = 3.5
+idle_power_draw_override = -1.0
+firing_power_draw = 3.0
+heat_per_shot = 8.0
+max_heat = 100.0
+cooldown_rate = 15.0
+valid_target_types = Array[String](["ground"])
+default_target_priority = 6
+requires_line_of_sight = true
+requires_sensor_link = false
+can_damage_own_buildings = false
+is_indirect_fire = false

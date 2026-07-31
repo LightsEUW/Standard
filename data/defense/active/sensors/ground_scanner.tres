@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SensorData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/sensor_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ground_scanner"
+display_name = "Bodenscanner"
+category = 1
+subcategory = 13
+description = "Erkennt grabende oder unterirdische Gegner. Benötigt viel Strom, besitzt einen begrenzten Radius, liefert Warnungen und Zielinformationen, verursacht keinen Schaden."
+build_cost = {"copper": 30, "iron": 10}
+build_time = 5.0
+footprint_size = Vector2i(2, 2)
+max_health = 45
+armor = 0.5
+resistances = {}
+power_idle_draw = 1.5
+power_active_draw = 3.0
+maintenance_cost = 0.5
+required_ammo_type = ""
+required_research_tier = 2
+repairable = true
+allowed_terrain_types = Array[String]([])
+destructible = true
+upgradable = false
+upgrade_target_id = ""
+scene_path = "res://scenes/defense/active/generic_sensor/generic_sensor.tscn"
+sensor_range = 300.0
+requires_line_of_sight = false
+detects_flying = false
+detects_hidden = true
+feeds_targeting_network = true
